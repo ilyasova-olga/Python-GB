@@ -1,0 +1,19 @@
+#01
+# Создать список и заполнить его элементами различных типов данных. 
+#Реализовать скрипт проверки типа данных каждого элемента. 
+#Использовать функцию type() для проверки типа. 
+#Элементы списка можно не запрашивать у пользователя, а указать явно, в программе.
+
+type_list = ['2011-10-10' , 2, 'text', 456, 45.3, None]
+type_str = '2011-10-10'
+type_int = (10001)
+type_tuple = ('2011-10-10' , 2, 'text', 456, 45.3, None)
+type_set = set('abrakadabra')
+type_dict = dict(name='Olga', surname='Ilyasova')
+type_bytes = b"Hey"
+type_bytearray = bytearray(b"hey")
+all_types = [type_list, type_str, type_int, type_tuple, 
+type_set, type_dict, type_bytes, type_bytearray]
+for i in all_types:
+
+     print(f'Тип {type(i)} для значений {i}')
